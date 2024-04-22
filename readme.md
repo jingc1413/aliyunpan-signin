@@ -22,3 +22,9 @@ docker build .
 ```bash
 GOOS=linux CGO_ENABLED=0 GOARCH=arm64 go build .
 ```
+
+##
+境变量refresh-token为必填项，获取方式如下： 登入阿里云盘，打开控制台输入
+```
+copy(JSON.parse(localStorage.token).refresh_token); console.log(JSON.parse(localStorage.token).refresh_token);
+```
